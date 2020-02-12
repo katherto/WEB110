@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="pacific.css" type="text/css">
+            <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+            <title>Pacific Trails Resort :: Reservations</title>
+        </head>
+        <body>
+            <div id="wrapper"><!--wraps webpage content-->
+                <header>
+                    <h1>Pacific Trails Resort</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="yurts.html">Yurts</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                    </ul>
+                </nav>
+                <main><!--Company description-->
+                    <h2>Reservations at Pacific Trails</h2>
+                    <h3>Contact Us Today!</h3>
+                    <p>Required fields are marked with an asterisk *</p>
+                    <!--Form for user to enter their contact information and comments, php was edited to display all information the user inputs from this form-->
+                    <form method="post" action="http://students.jccc.edu/katherto/pacific10/php/pacific.php">
+                        <label for="myFName">* First Name:</label>
+                        <input type="text" name="myFName" id="myFName" required>
+                        <label for="myLName">* Last Name:</label>
+                        <input type="text" name="myLName" id="myLName" required>
+                        <label for="myEmail">* E-mail:</label>
+                        <input type="email" name="myEmail" id="myEmail" size="35" required>
+                        <label for="myPhone">Phone:</label>
+                        <input type="tel" name="myPhone" id="myPhone" maxlength="12">
+                        <label for="arrivalDate">Arrival Date</label>
+                        <input type="date" name="arrivalDate" id="arrivalDate">
+                        <label for="nights">Nights:</label>
+                        <input type="number" name="nights" id="nights" min="1" max="14">
+                        <label for="myComments">* Comments:</label>
+                        <textarea name="myComments" id="myComments" rows="2" cols="30" required></textarea>
+                        <input type="submit" value="Send Information">
+                    </form>
+                    <div id="contact"><!--Company contact info-->
+                        <span class="resort">Pacific Trails Resort</span><br>
+                        12010 Pacific Trails Road<br>
+                        Zephyr, CA 95555<br>
+                        <p><a id="mobile" href="tel:888-555-5555">888-555-5555</a></p><!--element shows on mobile displays only and acts as a link-->
+                        <p><span id="desktop">888-555-5555</span></p><!--element shows for desktop and tablet displays-->
+                    </div><!--closing contact div-->
+                </main>
+                <footer><!--Copyright and email info in footer-->
+                    &copy;2018 Pacific Trails Resort<br>
+                    <a href="mailto:kevin@atherton.com">kevin@atherton.com</a>
+                </footer>
+            </div><!--closing wrapper div-->
+        </body>
+    </html>

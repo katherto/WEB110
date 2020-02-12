@@ -1,0 +1,122 @@
+#wrapper
+    {
+        width: 80%; /*width of the div element*/
+        margin-left: auto; /*lets browser choose the left and right margin to center the div*/
+        margin-right: auto;
+        background-color: #FFFFFF; /*white background*/
+        min-width: 960px;
+        max-width: 2048px;
+        box-shadow: 3px 3px 3px #333333; /*offset shadow for this element*/
+    }
+body
+    {
+        background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); /*background gradient*/
+        background-repeat: no-repeat; /*do not repeat background*/
+        font-family: Arial, Helvetica, sans-serif; /*uses this font family for text in body*/
+        color: #666666; /*dark grey text*/
+    }
+
+header
+    {
+        background-color: #000033; /*dark blue background*/
+        background-image: url(images/sunset.jpg); /*displays background image in header*/
+        background-repeat: no-repeat; /*disables background image repeat*/
+        background-position: right; /*aligns background image right*/
+        color: #FFFFFF; /*white text*/
+        height: 60px;
+        text-align: center; /*centers text*/
+        padding-top: 15px; /*sets padding for top*/
+    }
+
+main
+    {
+        padding: 1px 20px 20px 20px; /*sets top, right, bottom, and left padding*/
+        display: block;
+    }
+
+footer
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in footer*/
+        font-size: 75%; /*sets text size*/
+        font-style: italic; /*displays text in italics*/
+        text-align: center; /*centers text in footer*/
+        padding: 20px; /*sets padding for all sides*/
+    }
+
+nav
+    {
+        background-color: #FFFFFF; /*sky blue background*/
+        font-weight: bold; /*sets bold text*/
+        text-align: center; /*centers text*/
+        padding: 10px; /*sets padding for all sides*/
+    }
+
+nav a
+    {
+        text-decoration: none; /*remove underline from hyperlink text*/
+    }
+
+h1
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in heading1*/
+        margin-top: 0;
+        margin-bottom: 0; /*remove bottom margin from heading */
+    }
+
+h2
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in heading2*/
+        color: #3399CC; /*medium blue text*/
+        text-shadow: 1px 1px 1px #CCCCCC; /*1px offset gray shadow*/
+    }
+
+h3  
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in heading3*/
+        color: #000033; /*dark blue text color*/
+    }
+
+ul
+    {
+        list-style-image: url(images/marker.gif); /*use image as the style for unordered list bullets*/
+    }
+
+dt
+    {
+        color: #000033; /*dark blue text*/
+    }
+
+.resort
+    {
+        font-weight: bold; /*sets bold text*/
+        color: #5C7FA3; /*dark blue text*/
+    }
+
+#homehero
+    {
+        height: 300px;
+        background-image: url(images/coast.jpg); /*displays the coast image located in images folder*/
+        background-size: 100% 100%; /*adjusts the size of the image*/
+        background-repeat: no-repeat; /*sets background to not repeat*/
+    }
+
+#yurthero
+    {
+        height: 300px;
+        background-image: url(images/yurt.jpg); /*displays the yurt image located in images folder*/
+        background-size: 100% 100%; /*adjusts the size of the image*/
+        background-repeat: no-repeat; /*sets background to not repeat*/
+    }
+
+#trailhero
+    {
+        height: 300px;
+        background-image: url(images/trail.jpg); /*displays the trail image located in images folder*/
+        background-size: 100% 100%; /*adjusts the size of the image*/
+        background-repeat: no-repeat; /*sets background to not repeat*/
+    }
+
+#contact
+    {
+        font-size: 90%; /*sets size of font for contact id*/
+    }

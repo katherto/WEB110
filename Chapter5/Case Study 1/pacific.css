@@ -1,0 +1,76 @@
+body
+    {
+        background-color: #FFFFFF; /*white background*/
+        font-family: Arial, Helvetica, sans-serif; /*uses this font family for text in body*/
+        color: #666666; /*dark grey text*/
+    }
+
+header
+    {
+        background-color: #000033; /*dark blue background*/
+        background-image: url(sunset.jpg); /*displays background image in header*/
+        background-repeat: no-repeat; /*disables background image repeat*/
+        background-position: right; /*aligns background image right*/
+        color: #FFFFFF; /*white text*/
+        line-height: 400%; /*sets line height of text in header*/
+        text-indent: 1em; /*indents text in header*/
+    }
+
+footer
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in footer*/
+        font-size: 75%; /*sets text size*/
+        font-style: italic; /*displays text in italics*/
+        text-align: center; /*centers text in footer*/
+    }
+
+nav
+    {
+        background-color: #90C7E3; /*sky blue background*/
+        font-weight: bold; /*sets bold text*/
+    }
+
+nav a
+    {
+        text-decoration: none; /*remove underline from hyperlink text*/
+    }
+
+h1
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in heading1*/
+        margin-bottom: 0; /*remove bottom margin from heading */
+
+    }
+
+h2
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in heading2*/
+        color: #3399CC; /*medium blue text*/
+    }
+
+h3  
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif; /*uses this font family for text in heading3*/
+        color: #000033; /*dark blue text color*/
+    }
+
+ul
+    {
+        list-style-image: url(marker.gif); /*use image as the style for unordered list bullets*/
+    }
+
+dt
+    {
+        color: #000033; /*dark blue text*/
+    }
+
+.resort
+    {
+        font-weight: bold; /*sets bold text*/
+        color: #5C7FA3; /*dark blue text*/
+    }
+
+#contact
+    {
+        font-size: 90%; /*sets size of font for contact*/
+    }

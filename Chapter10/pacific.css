@@ -1,0 +1,391 @@
+*
+        {
+            box-sizing: border-box;
+        } /* configures universal selector for box sizing of elements */
+
+header, main, nav, footer, figure, figcaption, aside, section, article
+        {
+            display: block;
+        } /* configures html5 elements to work in older browsers */
+
+#wrapper
+        {
+            background-color: #90C7E3; /* blue background for wrapper */
+            background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3); /* background gradient to display in nav area */
+            border: 1px solid #000033; /* dark blue border for wrapper */
+            box-shadow: 3px 3px 3px #333333; /* offset shadow for wrapper */
+            max-width: 2048px;
+            min-width: 960px;
+            margin-left: auto; /* lets browser choose margins to center the wrapper */
+            margin-right: auto;
+            width: 80%; /* width of the wrapper */
+        }
+
+body
+        {
+            background-color: #B8DBED; /* light blue background color for body */
+            color: #666666; /* dark grey body text */
+            font-family: Arial, Helvetica, sans-serif; /* uses this font family for text in body */
+        }
+
+header
+        {
+            background-color: #000033; /* dark blue background */
+            background-position: right;
+            background-repeat: no-repeat;
+            color: #FFFFFF; /* white header text */
+            height: 120px;
+            padding-top: 30px;
+            padding-left: 3em;
+            text-align: center;
+        }
+
+main
+        {
+            background-color: #FFFFFF;
+            display: block;
+            margin-left: 190px;
+            padding: 1px 20px 20px 30px; /* sets top, right, bottom, and left padding */
+        }
+
+footer
+        {
+            background-color: #FFFFFF;
+            font-family: Georgia, 'Times New Roman', Times, serif; /* uses this font family for text in footer */
+            font-size: 75%;
+            font-style: italic;
+            margin-left: 190px;
+            padding: 20px; /* sets padding for all sides */
+            text-align: center;
+        }
+
+nav
+        {
+            float: left; /* floats nav element to the left, content will flow to the right for two column layout */
+            font-size: 120%;
+            font-weight: bold;
+            padding: 1.5em; /* sets padding for all sides */
+            width: 160px;
+        }
+
+nav ul
+        {
+            font-size: 1.2em;
+            list-style-type: none; /* removes unordered list markers */
+            margin: 0;
+            padding-left: 0;
+        }
+
+nav a
+        {
+            text-decoration: none; /* remove underline from hyperlink text */
+        }
+
+nav a:link
+        {
+            color: #5C7FA3; /* medium blue color for links in nav */
+        }
+
+nav a:visited
+        {
+            color: #344873; /* dark blue color for visited links in nav */
+        }
+
+nav a:hover
+        {
+            color: #A52A2A; /* red color for links when hovered in nav */
+        }
+
+h1
+        {
+            font-family: Georgia, 'Times New Roman', Times, serif; /* uses this font family for text in heading1 */
+            font-size: 3em;
+            letter-spacing: 0.25em;
+            margin-top: 0; /* remove top margin from heading2 */
+            margin-bottom: 0; /* remove bottom margin from heading2 */
+        }
+
+h2
+        {
+            color: #3399CC; /* medium blue text for heading2 */
+            font-family: Georgia, 'Times New Roman', Times, serif; /* uses this font family for text in heading2 */
+            text-shadow: 1px 1px 1px #CCCCCC; /* 1px offset and blurred gray shadow */
+        }
+
+h3
+        {
+            color: #000033; /* dark blue text color for heading3 */
+            font-family: Georgia, 'Times New Roman', Times, serif; /* uses this font family for text in heading3 */
+        }
+
+main ul
+        {
+            list-style-image: url(images/marker.gif); /* use marker image as the style for unordered list bullets in main element */
+        }
+
+dt
+        {
+            color: #000033; /* dark blue text for description list items */
+        }
+
+table
+        {
+            border: 2px solid #3399CC; /* blue border for table */
+            border-collapse: collapse; /* eliminates cell spacing in the table */
+        }
+
+th
+        {
+            background-color: #F5FAFC; /* light blue background for th elements */
+            border: 2px solid #3399CC; /* blue border for th element */
+            padding: 0.5em;
+        }
+
+td
+        {
+            border: 2px solid #3399CC; /* blue border for th element */
+            text-align: center;
+            padding: 0.5em;
+        }
+
+label
+        {
+            display: block;
+            float: left;
+            padding-right: 10px;
+            text-align: right;
+            width: 120px;
+        }
+
+input
+        {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+textarea
+        {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+input[type="submit"]
+        {
+            /* this is a deviation from the instructions provided by the case study. the book instructs a left margin for the submit button of 130px.
+            in figure 10.33 on page 348 this even appears correct since the submit button is offset from the other form controls.
+            the previous labels are 120px wide as instructed (no margins), with a 10px right padding (not instructed to be 10px but as an appropriate amount).
+            the final figure 10.36 on page 351 shows the submit button in what I believe the correct position to be along with the other form controls.
+            the only way I can think of to achieve this given their instructions would be to reduce the left margin as I have here. */
+            margin-left: 120px;
+        }
+
+tr:nth-of-type(even)
+        {
+            background-color: #F5FAFC; /* light blue background color for even numbered table rows */
+        }
+
+.text
+        {
+            text-align: left;
+        }
+
+.resort
+        {
+            color: #5C7FA3; /* dark blue text for resort name */
+            font-weight: bold;
+        }
+
+#homehero
+        {
+            background-image: url(images/coast2.jpg); /* displays the coast image located in images folder */
+            background-repeat: no-repeat;
+            background-size: 100% 100%; /* adjusts scale and size of image */
+            height: 300px;
+            margin-left: 190px;
+        }
+
+#yurthero
+        {
+            background-image: url(images/yurt.jpg); /* displays the yurt image located in images folder */
+            background-repeat: no-repeat;
+            background-size: 100% 100%; /* adjusts the size of the image */
+            height: 300px;
+            margin-left: 190px;
+        }
+
+#trailhero
+        {
+            background-image: url(images/trail.jpg); /* displays the trail image located in images folder */
+            background-repeat: no-repeat;
+            background-size: 100% 100%; /* adjusts the size of the image */
+            height: 300px;
+            margin-left: 190px;
+        }
+
+#contact
+        {
+            font-size: 90%; /* sets size of font for contact id */
+        }
+
+#mobile
+        {
+            display: none;
+        }
+
+#desktop
+        {
+            display: inline;
+        }
+
+/*################################################################################################################
+  ################################## Beginning of Tablet Media Query #############################################
+  ################################################################################################################*/
+
+@media only screen and (max-width: 64em)
+    {
+        body
+                {
+                    background-color: #FFFFFF; /* white background color */
+                    margin: 0;
+                }
+
+        header
+                {
+                    height: auto;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                    padding-left: 0;
+                }
+
+        h1
+                {
+                    letter-spacing: 0.1em;
+                }
+
+        main
+                {
+                    margin-left: 0;
+                }
+
+        nav
+                {
+                    float: none;
+                    padding: 0.5em;
+                    text-align: center;
+                    width: auto;
+                }
+
+        nav li
+                {
+                    display: inline;
+                    padding: 0.25em 0.75em; /* vertical padding, horizontal padding */
+                }
+
+        footer
+                {
+                    margin-left: 0;
+                }
+
+        #wrapper
+                {
+                    border: none;
+                    box-shadow: none;
+                    min-width: 0;
+                    width: auto;
+                }
+
+        #homehero
+                {
+                    height: 200px;
+                    margin-left: 0;
+                }
+
+        #yurthero
+                {
+                    height: 200px;
+                    margin-left: 0;
+                }
+
+        #trailhero
+                {
+                    height: 200px;
+                    margin-left: 0;
+                }
+    } /* end for tablet query */
+
+/*########################################################################
+  ############## Beginning of Mobile Media Query #########################
+  #######################################################################*/
+
+@media only screen and (max-width: 37.5em)
+    {
+        main
+                {
+                    font-size: 90%;
+                    padding: 0.1em 1em; /* vertical padding, horizontal padding */
+                }
+
+        nav
+                {
+                    padding: 0;
+                }
+
+        nav a
+                {
+                    display: block;
+                }
+
+        nav li
+                {
+                    border: 2px solid #330000; /* dark red solid border */
+                    display: block;
+                    margin: 0;
+                }
+
+        h1
+                {
+                    font-size: 2em;
+                }
+
+        label
+                {
+                    float: none;
+                    text-align: left;
+                }
+
+        input[type="submit"]
+                {
+                    margin-left: 0;
+                }
+
+        #mobile
+                {
+                    display: inline;
+                }
+
+        #desktop
+                {
+                    display: none;
+                }
+
+        #homehero
+                {
+                    background-image: none;
+                    display: none;
+                    height: 0;
+                } /* hides image in mobile display */
+
+        #yurthero
+                {
+                    background-image: none;
+                    display: none;
+                    height: 0;
+                } /* hides image in mobile display */
+
+        #trailhero
+                {
+                    background-image: none;
+                    display: none;
+                    height: 0;
+                } /* hides image in mobile display */
+    } /* end for mobile query */
