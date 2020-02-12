@@ -1,0 +1,46 @@
+#wrapper
+                        {
+                            width: 80%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            min-width: 500px;
+                        }
+
+table
+                        {
+                            border: 2px solid #000000; /* configures a black border around the table */
+                            border-collapse: collapse;
+                            width: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+caption
+                        {
+                            font-size: 150%;
+                            font-weight: bold;
+                            margin-bottom: 0.25em;
+                        }
+th
+                        {
+                            background-color: #F2F2F2; /* configures a light grey background for the th elements */
+                            border: 2px solid #000000; /* configures a black border around the th elements */
+                            padding: 0.5em;
+                        }
+
+td
+                        {
+                            border: 2px solid #000000; /* configures a black border around the td elements */
+                            padding: 0.5em;
+                            text-align: center;
+                        }
+
+tr:nth-of-type(even)
+                        {
+                            background-color: #F1F1F1; /* configures a light grey background for every even row in the table */
+                        }
+
+.definition
+                        {
+                            text-align: left;
+                        }

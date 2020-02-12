@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="final.css" type="text/css">
+        <title>Contact Us - Society Against Misinformation</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Society Against Misinformation</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="concern.html">The Concern</a></li>
+                    <li><a href="role.html">Social Media's Role</a></li>
+                    <li><a href="stopping.html">Stopping Misinformation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div id="centerWrapper">
+                    <p id="formDescription">
+                        Thank you for your interest in contacting us!
+                        <br>
+                        If you have a specific question or would like us to provide additional materials, 
+                        please fill out this form and send your contact information.  You will receive an automated reply from an un-monitored email, 
+                        and we'll reply within two business days regarding your specific inquiry.
+                    </p>
+                    <form action="http://students.jccc.edu/katherto/final_site/final.php" method="post">
+                        <p>* = required</p>
+                        <label for="firstName">* First Name:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                        <label for="lastName">* Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                        <label for="emailAddress">* E-mail:</label>
+                        <input type="email" name="emailAddress" id="emailAddress" required>
+                        <label for="phoneNumber">Phone:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                        <label for="comments">* Comments:</label>
+                        <textarea name="comments" id="comments" rows="5" cols="30" required></textarea>
+                        <input type="submit" value="Send Information">
+                    </form>
+                </div><!--closing center wrapper div-->
+            </main>
+            <footer>
+                &copy;2019 Kevin Atherton
+            </footer>
+        </div><!--closing wrapper div-->
+    </body>
+</html>
